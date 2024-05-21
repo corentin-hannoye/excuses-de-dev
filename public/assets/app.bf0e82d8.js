@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[524],{108:()=>{console.log("az")}},e=>{var s;s=108,e(e.s=s)}]);
