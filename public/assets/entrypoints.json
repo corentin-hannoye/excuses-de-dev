@@ -2,16 +2,19 @@
   "entrypoints": {
     "app": {
       "js": [
-        "/assets/runtime.05dacd30.js",
-        "/assets/app.bf0e82d8.js"
+        "http://localhost:8080/assets/runtime.js",
+        "http://localhost:8080/assets/vendors-node_modules_pnpm_webpack-dev-server_4_15_2_webpack-cli_4_10_0_webpack_5_91_0__webpac-d9cf0d.js",
+        "http://localhost:8080/assets/vendors-node_modules_pnpm_react-dom_18_3_1_react_18_3_1_node_modules_react-dom_client_js-node-6067de.js",
+        "http://localhost:8080/assets/app.js"
       ]
     },
     "styles": {
       "js": [
-        "/assets/runtime.05dacd30.js"
+        "http://localhost:8080/assets/runtime.js",
+        "http://localhost:8080/assets/vendors-node_modules_pnpm_webpack-dev-server_4_15_2_webpack-cli_4_10_0_webpack_5_91_0__webpac-d9cf0d.js"
       ],
       "css": [
-        "/assets/styles.b75294ae.css"
+        "http://localhost:8080/assets/styles.css"
       ]
     }
   }
