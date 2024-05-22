@@ -16,7 +16,7 @@ export default function() {
 
     return <>
         {apologies.map((apologie: any) => (
-            <div key={apologie.id}>
+            <div key={apologie.id} className="">
                 <p>{apologie.message}</p>
             </div>
         ))}

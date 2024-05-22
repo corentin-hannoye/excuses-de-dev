@@ -13,3 +13,15 @@ html {
 body {
     font-family: sans-serif;
 }
+
+.app_nav {
+    position: fixed;
+}
+
+.app_main {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
