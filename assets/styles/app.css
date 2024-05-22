@@ -63,6 +63,7 @@
 
 :root {
     --blackColor: #222;
+    --whiteColor: #fff;
     --appVerticalPadding: 40px;
     --transitionTimingFunction: ease;
 }
@@ -90,7 +91,10 @@ a {
 .align_center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 .mb_20 {
@@ -98,6 +102,19 @@ a {
 }
 .mb_40 {
     margin-bottom: 40px;
+}
+
+.title_sticky {
+    position: sticky;
+    top: 0;
+    transform: translateX(calc(var(--appVerticalPadding) * -1));
+    background-color: #fff5;
+    -wekbit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    width: calc(100% + var(--appVerticalPadding) * 2);
+    padding: 12px;
+    padding-left: var(--appVerticalPadding);
+    border-bottom: 1px solid #eeeeee;
 }
 
 /* App */
@@ -137,7 +154,9 @@ a {
 .app_main {
     position: relative;
     flex-grow: 1;
-    padding: var(--appVerticalPadding) 40px;
+    background-image: url(/assets/media/bg.png);
+    background-attachment: fixed;
+    padding: var(--appVerticalPadding);
 }
 
 /* Apologies */

@@ -43,7 +43,10 @@ export default function() {
                 apology.map((i: any) => (
                     <p>{ i.message }</p>
                 )) :
-                <p>0 message trouvé associé au code HTTP { idMessage }</p>
+                <>
+                    <h1 className="mb_40">Erreur</h1>
+                    <p>0 message trouvé associé au code HTTP { idMessage }</p>
+                </>
         }
     </>;
 }

@@ -14,7 +14,7 @@ export default function() {
     }, []);
 
     return <>
-        <h1 className="mb_40">Liste d'excuses</h1>
+        <h1 className="title_sticky mb_40">Liste d'excuses</h1>
         {
             apologies.length > 0 ? (
                 apologies.map((apologie: any) =>
