@@ -2,6 +2,9 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\HttpCodeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -9,6 +12,11 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
+#[ApiResource(
+    paginationEnabled: false,
+    normalizationContext: ['groups' => 'read:item']
+)]
+#[ApiFilter(SearchFilter::class, properties: ['code' => 'exact'])]
 #[ORM\Entity(repositoryClass: HttpCodeRepository::class)]
 class HttpCode
 {
@@ -18,14 +26,14 @@ class HttpCode
     #[Groups('read:item')]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::SMALLINT)]
+    #[ORM\Column(type: Types::SMALLINT, unique: true)]
     #[Groups('read:item')]
     private ?int $code = null;
 
     /**
-     * @var Collection<int, Apologie>
+     * @var Collection<int, Apology>
      */
-    #[ORM\OneToMany(targetEntity: Apologie::class, mappedBy: 'http_code')]
+    #[ORM\OneToMany(targetEntity: Apology::class, mappedBy: 'http_code')]
     private Collection $apologies;
 
     public function __construct()
@@ -58,14 +66,14 @@ class HttpCode
     }
 
     /**
-     * @return Collection<int, Apologie>
+     * @return Collection<int, Apology>
      */
     public function getApologies(): Collection
     {
         return $this->apologies;
     }
 
-    public function addApology(Apologie $apology): static
+    public function addApology(Apology $apology): static
     {
         if (!$this->apologies->contains($apology)) {
             $this->apologies->add($apology);
@@ -75,7 +83,7 @@ class HttpCode
         return $this;
     }
 
-    public function removeApology(Apologie $apology): static
+    public function removeApology(Apology $apology): static
     {
         if ($this->apologies->removeElement($apology)) {
             // set the owning side to null (unless already changed)

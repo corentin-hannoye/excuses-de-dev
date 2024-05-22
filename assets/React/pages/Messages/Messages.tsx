@@ -6,13 +6,12 @@ export default function() {
 
     useEffect(() => {
         
-        axios.get('/api/apologies')
+        axios.get("/api/apologies")
         .then(res => {
-            setApologies(res.data['hydra:member']);
+            setApologies(res.data["hydra:member"]);
         })
 
     }, []);
-    
 
     return <>
         <h1 className="mb_40">Liste d'excuses</h1>

@@ -2,8 +2,10 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
 use ApiPlatform\Metadata\ApiResource;
-use App\Repository\ApologieRepository;
+use App\Repository\ApologyRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -11,8 +13,9 @@ use Symfony\Component\Serializer\Annotation\Groups;
     paginationEnabled: false,
     normalizationContext: ['groups' => 'read:item']
 )]
-#[ORM\Entity(repositoryClass: ApologieRepository::class)]
-class Apologie
+#[ApiFilter(SearchFilter::class, properties: ['http_code' => 'exact'])]
+#[ORM\Entity(repositoryClass: ApologyRepository::class)]
+class Apology
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]

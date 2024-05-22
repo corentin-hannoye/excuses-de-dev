@@ -22,9 +22,9 @@ class Tag
     private ?string $libelle = null;
 
     /**
-     * @var Collection<int, Apologie>
+     * @var Collection<int, Apology>
      */
-    #[ORM\OneToMany(targetEntity: Apologie::class, mappedBy: 'tag')]
+    #[ORM\OneToMany(targetEntity: Apology::class, mappedBy: 'tag')]
     private Collection $apologies;
 
     public function __construct()
@@ -57,14 +57,14 @@ class Tag
     }
 
     /**
-     * @return Collection<int, Apologie>
+     * @return Collection<int, Apology>
      */
     public function getApologies(): Collection
     {
         return $this->apologies;
     }
 
-    public function addApology(Apologie $apology): static
+    public function addApology(Apology $apology): static
     {
         if (!$this->apologies->contains($apology)) {
             $this->apologies->add($apology);
@@ -74,7 +74,7 @@ class Tag
         return $this;
     }
 
-    public function removeApology(Apologie $apology): static
+    public function removeApology(Apology $apology): static
     {
         if ($this->apologies->removeElement($apology)) {
             // set the owning side to null (unless already changed)

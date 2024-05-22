@@ -6,18 +6,9 @@ import axios from "axios";
 export default function() {
     const [apology, setApology] = useState("");
 
-    useEffect(() => {
-        
-        axios.get('/api/apologies')
-        .then(res => {
-            setApology(res.data['hydra:member'][0].message);
-        })
-
-    }, []);
-
     return <>
         <h1 className="mb_40">{ APP_TITLE }</h1>
         <p>{ apology.length > 0 ? apology : "Chargement de l'excuse..." }</p>
-        <ButtonGenerateApology />
+        <ButtonGenerateApology setApology={setApology} />
     </>;
 }

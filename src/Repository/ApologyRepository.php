@@ -2,18 +2,18 @@
 
 namespace App\Repository;
 
-use App\Entity\Apologie;
+use App\Entity\Apology;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Apologie>
+ * @extends ServiceEntityRepository<Apology>
  */
-class ApologieRepository extends ServiceEntityRepository
+class ApologyRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Apologie::class);
+        parent::__construct($registry, Apology::class);
     }
 
     //    /**
