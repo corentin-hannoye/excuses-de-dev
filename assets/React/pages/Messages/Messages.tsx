@@ -1,17 +1,21 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import Error404 from "../Errors/Error404";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function() {
-    const param = useParams();
-    
-    const idMessage = param.http_code;
+    const [apologies, setApologies] = useState([]);
 
-    if(!idMessage.match(/^\d{3}$/)) {
-        return <Error404 />;
-    }
+    useEffect(() => {
+        
+        axios.get('/api/apologies')
+        .then(res => {
+            setApologies(res.data['hydra:member']);
+        })
 
-    
+    }, []);
 
-    return <p>Tous les messages</p>;
+    return <>
+        {apologies.map(apologie => (
+            <p>{apologie.message}</p>
+        ))}
+    </>;
 }

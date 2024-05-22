@@ -9,6 +9,7 @@ import Lost from "./pages/Lost/Lost";
 import Root from "./Root";
 import Error404 from "./pages/Errors/Error404";
 import Messages from "./pages/Messages/Messages";
+import Message from "./pages/Messages/Message";
 
 const router = createBrowserRouter([
     {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
                 element: <Lost />
             },
             {
-                path: ":http_code",
+                path: "apologies",
                 element: <Messages />
+            },
+            {
+                path: ":http_code",
+                element: <Message />
             }
         ]
     }

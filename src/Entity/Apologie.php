@@ -2,9 +2,14 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\ApologieRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
+#[ApiResource(
+    normalizationContext: ['groups' => 'read:item']
+)]
 #[ORM\Entity(repositoryClass: ApologieRepository::class)]
 class Apologie
 {
@@ -14,14 +19,17 @@ class Apologie
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups('read:item')]
     private ?string $message = null;
 
     #[ORM\ManyToOne(inversedBy: 'apologies')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups('read:item')]
     private ?HttpCode $http_code = null;
 
     #[ORM\ManyToOne(inversedBy: 'apologies')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups('read:item')]
     private ?Tag $tag = null;
 
     public function getId(): ?int
