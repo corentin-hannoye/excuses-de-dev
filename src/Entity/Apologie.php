@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ApiResource(
+    paginationEnabled: false,
     normalizationContext: ['groups' => 'read:item']
 )]
 #[ORM\Entity(repositoryClass: ApologieRepository::class)]
@@ -16,6 +17,7 @@ class Apologie
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups('read:item')]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]

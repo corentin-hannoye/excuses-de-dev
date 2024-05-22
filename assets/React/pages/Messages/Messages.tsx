@@ -12,10 +12,13 @@ export default function() {
         })
 
     }, []);
+    
 
     return <>
-        {apologies.map(apologie => (
-            <p>{apologie.message}</p>
+        {apologies.map((apologie: any) => (
+            <div key={apologie.id}>
+                <p>{apologie.message}</p>
+            </div>
         ))}
     </>;
 }
