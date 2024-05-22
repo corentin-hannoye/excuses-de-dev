@@ -1,5 +1,5 @@
 import React from "react";
-import {createRoot} from "react-dom";
+import { createRoot } from "react-dom";
 import {
     createBrowserRouter,
     RouterProvider
@@ -7,11 +7,14 @@ import {
 import Home from "./pages/Home/Home";
 import Lost from "./pages/Lost/Lost";
 import Root from "./Root";
+import Error404 from "./pages/Errors/Error404";
+import Messages from "./pages/Messages/Messages";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
+        errorElement: <Error404 />,
         children: [
             {
                 path: "",
@@ -20,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: "lost",
                 element: <Lost />
+            },
+            {
+                path: ":http_code",
+                element: <Messages />
             }
         ]
     }
