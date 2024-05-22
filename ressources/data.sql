@@ -16,12 +16,22 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Dumping data for table `apologie`
+--
+
+LOCK TABLES `apologie` WRITE;
+/*!40000 ALTER TABLE `apologie` DISABLE KEYS */;
+INSERT INTO `apologie` VALUES (1,1,1,'Meh'),(2,2,1,'Emacs'),(3,3,1,'Explosion'),(4,4,1,'Goto Fail'),(5,5,1,'I wrote the code and missed the necessary validation by an oversight (see 795)'),(6,6,1,'Delete Your Account'),(7,7,1,'Can\'t quit vi'),(8,8,2,'PHP'),(9,9,2,'Convenience Store'),(10,10,2,'NoSQL'),(11,11,2,'I am not a teapot'),(12,12,2,'Haskell'),(13,13,3,'Unpossible'),(14,14,3,'Known Unknowns'),(15,15,3,'Unknown Unknowns'),(16,16,3,'Tricky'),(17,17,3,'This line should be unreachable'),(18,18,3,'It works on my machine'),(19,19,3,'It\'s a feature, not a bug'),(20,20,3,'32 bits is plenty'),(21,21,3,'It works in my timezone'),(22,22,4,'Fucking npm'),(23,23,4,'Fucking Rubygems'),(24,24,4,'Fucking Unic�de'),(25,25,4,'Fucking Deadlocks'),(26,26,4,'Fucking Deferreds'),(27,27,4,'Fucking Race Conditions'),(28,28,4,'Fucking IE'),(29,29,4,'FuckThreadsing'),(30,30,4,'Fucking Exactly-once Delivery'),(31,31,4,'Fucking Windows'),(32,30,4,'Fucking Exactly'),(33,31,4,'Fucking McAfee'),(34,32,5,'Didn\'t bother to compile it'),(35,33,5,'Syntax Error'),(36,34,5,'Too many semi-colons'),(37,35,5,'Not enough semi-colons'),(38,36,5,'Insufficiently polite'),(39,37,5,'Excessively polite'),(40,38,5,'Unexpected `T_PAAMAYIM_NEKUDOTAYIM`'),(41,39,6,'Hungover'),(42,40,6,'Stoned'),(43,41,6,'Under-Caffeinated'),(44,42,6,'Over-Caffeinated'),(45,43,6,'Railscamp'),(46,44,6,'Sober'),(47,45,6,'Drunk'),(48,46,6,'Accidentally Took Sleeping Pills Instead Of Migraine Pills During Crunch Week'),(49,47,7,'Cached for too long'),(50,48,7,'Not cached long enough'),(51,49,7,'Not cached at all'),(52,50,7,'Why was this cached?'),(53,51,7,'Out of cash'),(54,52,7,'Error on the Exception'),(55,53,7,'Coincidence'),(56,54,7,'Off By One Error'),(57,55,7,'Off By Too Many To Count Error'),(58,56,8,'Project owner not responding'),(59,57,8,'Operations'),(60,58,8,'QA'),(61,59,8,'It was a customer request, honestly'),(62,60,8,'Management, obviously'),(63,61,8,'TPS Cover Sheet not attached'),(64,62,8,'Try it now'),(65,63,8,'Further Funding Required'),(66,64,8,'Designer\'s final designs weren\'t'),(67,65,8,'Not my department'),(68,66,9,'The Internet shut down due to copyright restrictions'),(69,67,9,'Climate change driven catastrophic weather event'),(70,68,9,'Zombie Apocalypse'),(71,69,9,'Someone let PG near a REPL'),(72,70,9,'#heartbleed (see 705)'),(73,71,9,' Some DNS fuckery idno'),(74,72,9,'This is the last page of the Internet. Go back'),(75,73,9,'I checked the db backups cupboard and the cupboard was bare'),(76,74,9,'End of the world');
+/*!40000 ALTER TABLE `apologie` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `http_code`
 --
 
 LOCK TABLES `http_code` WRITE;
 /*!40000 ALTER TABLE `http_code` DISABLE KEYS */;
-INSERT INTO `http_code` VALUES (1,701),(2,702),(3,703),(4,704),(5,705),(6,706),(7,707),(8,710),(9,711),(10,712),(11,718),(12,719),(13,720),(14,721),(15,722),(16,723),(17,724),(18,725),(19,726),(20,727),(21,728),(22,730),(23,731),(24,732),(25,733),(26,734),(27,736),(28,737),(29,738),(30,739),(31,750),(32,753),(33,754),(34,755),(35,756),(36,757),(37,759),(38,761),(39,762),(40,763),(41,764),(42,765),(43,766),(44,767),(45,768),(46,771),(47,772),(48,773),(49,774),(50,775),(51,776),(52,777),(53,778),(54,779),(55,780),(56,781),(57,782),(58,783),(59,784),(60,785),(61,786),(62,787),(63,788),(64,789),(65,791),(66,792),(67,793),(68,794),(69,795),(70,796),(71,797),(72,798),(73,799);
+INSERT INTO `http_code` VALUES (1,701),(2,702),(3,703),(4,704),(5,705),(6,706),(7,707),(8,710),(9,711),(10,712),(11,718),(12,719),(13,720),(14,721),(15,722),(16,723),(17,724),(18,725),(19,726),(20,727),(21,728),(22,730),(23,731),(24,732),(25,733),(26,734),(27,735),(28,736),(29,737),(30,738),(31,739),(32,750),(33,753),(34,754),(35,755),(36,756),(37,757),(38,759),(39,761),(40,762),(41,763),(42,764),(43,765),(44,766),(45,767),(46,768),(47,771),(48,772),(49,773),(50,774),(51,775),(52,776),(53,777),(54,778),(55,779),(56,780),(57,781),(58,782),(59,783),(60,784),(61,785),(62,786),(63,787),(64,788),(65,789),(66,791),(67,792),(68,793),(69,794),(70,795),(71,796),(72,797),(73,798),(74,799);
 /*!40000 ALTER TABLE `http_code` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -44,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-22 13:50:35
+-- Dump completed on 2024-05-22 14:24:10

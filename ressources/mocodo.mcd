@@ -1,0 +1,7 @@
+:
+HTTPCODE: id, code
+POSSÈDE, 01 APOLOGIE, 0n HttpCode
+
+TAG: id, name
+A, 01 APOLOGIE, 0n Tag
+APOLOGIE: id, message
