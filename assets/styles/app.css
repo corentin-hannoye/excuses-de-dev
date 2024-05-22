@@ -1,3 +1,58 @@
+/*Font*/
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    src: url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: url('../fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+}
+
 *,
 ::before,
 ::after {
@@ -6,22 +61,78 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blackColor: #222;
+    --appVerticalPadding: 40px;
+    --transitionTimingFunction: ease;
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-.app_nav {
-    position: fixed;
+ul, li {
+    list-style: none;
 }
 
-.app_main {
-    position: relative;
+a {
+    text-decoration: none;
 }
 
 .flex {
     display: flex;
 }
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+.mb_40 {
+    margin-bottom: 40px;
+}
+
+/* App */
+
+.app_nav {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, #539DC2AA, #D5954BAA);
+    height: 100vh;
+    padding-top: var(--appVerticalPadding);
+    padding-bottom: var(--appVerticalPadding);
+    overflow: auto;
+}
+.app_nav::before {
+    content: "Oops..";
+    z-index: -1;
+    position: absolute;
+    bottom: 50px;
+    opacity: .1;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.app_nav a {
+    display: block;
+    color: var(--blackColor);
+    padding: 10px 160px 10px 40px;
+    transition: background-color .2s var(--transitionTimingFunction);
+}
+.app_nav a:hover {
+    background-color: #539DC250;
+}
+.app_nav a.active {
+    background-color: #539DC2;
+}
+
+.app_main {
+    position: relative;
+    padding: var(--appVerticalPadding) 40px;
+}
+
+/* Apologies */
+
+

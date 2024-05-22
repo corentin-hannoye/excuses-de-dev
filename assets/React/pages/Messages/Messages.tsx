@@ -15,10 +15,15 @@ export default function() {
     
 
     return <>
-        {apologies.map((apologie: any) => (
-            <div key={apologie.id} className="">
-                <p>{apologie.message}</p>
-            </div>
-        ))}
+        <h1 className="mb_40">Liste d'excuses</h1>
+        {
+            apologies.length > 0 ? (
+                apologies.map((apologie: any) =>
+                    <div key={apologie.id} className="">
+                        <p>{apologie.message}</p>
+                    </div>
+                )):
+                <p>Chargement des excuses...</p>
+        }
     </>;
 }
