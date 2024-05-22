@@ -2,12 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\MessageRepository;
+use App\Repository\TagRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: MessageRepository::class)]
+#[ORM\Entity(repositoryClass: TagRepository::class)]
 class Tag
 {
     #[ORM\Id]
@@ -19,14 +19,14 @@ class Tag
     private ?string $libelle = null;
 
     /**
-     * @var Collection<int, HttpCode>
+     * @var Collection<int, Apologie>
      */
-    #[ORM\OneToMany(targetEntity: HttpCode::class, mappedBy: 'message')]
-    private Collection $httpCodes;
+    #[ORM\OneToMany(targetEntity: Apologie::class, mappedBy: 'tag')]
+    private Collection $apologies;
 
     public function __construct()
     {
-        $this->httpCodes = new ArrayCollection();
+        $this->apologies = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -54,29 +54,29 @@ class Tag
     }
 
     /**
-     * @return Collection<int, HttpCode>
+     * @return Collection<int, Apologie>
      */
-    public function getHttpCodes(): Collection
+    public function getApologies(): Collection
     {
-        return $this->httpCodes;
+        return $this->apologies;
     }
 
-    public function addHttpCode(HttpCode $httpCode): static
+    public function addApology(Apologie $apology): static
     {
-        if (!$this->httpCodes->contains($httpCode)) {
-            $this->httpCodes->add($httpCode);
-            $httpCode->setTag($this);
+        if (!$this->apologies->contains($apology)) {
+            $this->apologies->add($apology);
+            $apology->setTag($this);
         }
 
         return $this;
     }
 
-    public function removeHttpCode(HttpCode $httpCode): static
+    public function removeApology(Apologie $apology): static
     {
-        if ($this->httpCodes->removeElement($httpCode)) {
+        if ($this->apologies->removeElement($apology)) {
             // set the owning side to null (unless already changed)
-            if ($httpCode->getTag() === $this) {
-                $httpCode->setTag(null);
+            if ($apology->getTag() === $this) {
+                $apology->setTag(null);
             }
         }
 

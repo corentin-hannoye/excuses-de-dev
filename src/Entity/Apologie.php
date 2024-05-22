@@ -2,10 +2,10 @@
 
 namespace App\Entity;
 
-use App\Repository\ApologiesRepository;
+use App\Repository\ApologieRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: ApologiesRepository::class)]
+#[ORM\Entity(repositoryClass: ApologieRepository::class)]
 class Apologie
 {
     #[ORM\Id]
@@ -19,6 +19,10 @@ class Apologie
     #[ORM\ManyToOne(inversedBy: 'apologies')]
     #[ORM\JoinColumn(nullable: false)]
     private ?HttpCode $http_code = null;
+
+    #[ORM\ManyToOne(inversedBy: 'apologies')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Tag $tag = null;
 
     public function getId(): ?int
     {
@@ -52,6 +56,18 @@ class Apologie
     public function setHttpCode(?HttpCode $http_code): static
     {
         $this->http_code = $http_code;
+
+        return $this;
+    }
+
+    public function getTag(): ?Tag
+    {
+        return $this->tag;
+    }
+
+    public function setTag(?Tag $tag): static
+    {
+        $this->tag = $tag;
 
         return $this;
     }

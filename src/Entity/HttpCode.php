@@ -25,10 +25,6 @@ class HttpCode
     #[ORM\OneToMany(targetEntity: Apologie::class, mappedBy: 'http_code')]
     private Collection $apologies;
 
-    #[ORM\ManyToOne(inversedBy: 'httpCodes')]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Tag $tag = null;
-
     public function __construct()
     {
         $this->apologies = new ArrayCollection();
@@ -84,18 +80,6 @@ class HttpCode
                 $apology->setHttpCode(null);
             }
         }
-
-        return $this;
-    }
-
-    public function getTag(): ?Tag
-    {
-        return $this->tag;
-    }
-
-    public function setTag(?Tag $tag): static
-    {
-        $this->tag = $tag;
 
         return $this;
     }
