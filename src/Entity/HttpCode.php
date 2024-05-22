@@ -27,7 +27,7 @@ class HttpCode
 
     #[ORM\ManyToOne(inversedBy: 'httpCodes')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Message $message = null;
+    private ?Tag $tag = null;
 
     public function __construct()
     {
@@ -88,14 +88,14 @@ class HttpCode
         return $this;
     }
 
-    public function getMessage(): ?Message
+    public function getTag(): ?Tag
     {
-        return $this->message;
+        return $this->tag;
     }
 
-    public function setMessage(?Message $message): static
+    public function setTag(?Tag $tag): static
     {
-        $this->message = $message;
+        $this->tag = $tag;
 
         return $this;
     }

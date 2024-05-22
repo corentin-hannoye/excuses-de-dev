@@ -8,7 +8,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: MessageRepository::class)]
-class Message
+class Tag
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -65,7 +65,7 @@ class Message
     {
         if (!$this->httpCodes->contains($httpCode)) {
             $this->httpCodes->add($httpCode);
-            $httpCode->setMessage($this);
+            $httpCode->setTag($this);
         }
 
         return $this;
@@ -75,8 +75,8 @@ class Message
     {
         if ($this->httpCodes->removeElement($httpCode)) {
             // set the owning side to null (unless already changed)
-            if ($httpCode->getMessage() === $this) {
-                $httpCode->setMessage(null);
+            if ($httpCode->getTag() === $this) {
+                $httpCode->setTag(null);
             }
         }
 
