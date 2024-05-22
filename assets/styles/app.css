@@ -84,6 +84,19 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+    background-color: #fff;
+    padding: 10px 80px;
+    border: 1px solid var(--blackColor);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
 }
@@ -119,6 +132,11 @@ a {
 
 /* App */
 
+.app_link {
+    color: #539DC2;
+    text-decoration: underline;
+}
+
 .app_nav {
     position: sticky;
     top: 0;
@@ -127,6 +145,7 @@ a {
     padding-top: var(--appVerticalPadding);
     padding-bottom: var(--appVerticalPadding);
     overflow: auto;
+    border-right: 1px solid #eeeeee;
 }
 .app_nav::before {
     content: "Oops..";
@@ -148,7 +167,7 @@ a {
     background-color: #539DC250;
 }
 .app_nav a.active {
-    background-color: #539DC2;
+    background-color: #539DC2AA;
 }
 
 .app_main {

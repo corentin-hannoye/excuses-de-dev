@@ -7,7 +7,7 @@ export default function() {
 
     return <div className="align_center">
         <h1 className="mb_40">{ APP_TITLE }</h1>
-        <p>{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
+        <p className="mb_20">{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
         <ButtonGenerateApology setApology={setApology} />
     </div>;
 }
