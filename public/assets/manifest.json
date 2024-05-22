@@ -1,8 +1,0 @@
-{
-  "assets/app.js": "http://localhost:8080/assets/app.js",
-  "assets/styles.css": "http://localhost:8080/assets/styles.css",
-  "assets/runtime.js": "http://localhost:8080/assets/runtime.js",
-  "assets/vendors-node_modules_pnpm_webpack-dev-server_4_15_2_webpack-cli_4_10_0_webpack_5_91_0__webpac-d9cf0d.js": "http://localhost:8080/assets/vendors-node_modules_pnpm_webpack-dev-server_4_15_2_webpack-cli_4_10_0_webpack_5_91_0__webpac-d9cf0d.js",
-  "assets/vendors-node_modules_pnpm_react-dom_18_3_1_react_18_3_1_node_modules_react-dom_client_js-node-6067de.js": "http://localhost:8080/assets/vendors-node_modules_pnpm_react-dom_18_3_1_react_18_3_1_node_modules_react-dom_client_js-node-6067de.js",
-  "assets/vendors-node_modules_pnpm_core-js_3_37_1_node_modules_core-js_modules_es_object_define-property_js.js": "http://localhost:8080/assets/vendors-node_modules_pnpm_core-js_3_37_1_node_modules_core-js_modules_es_object_define-property_js.js"
-}
