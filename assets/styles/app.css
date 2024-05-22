@@ -91,10 +91,19 @@ img {
 button {
     font: inherit;
     background-color: #fff;
-    padding: 10px 80px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 40px;
     border: 1px solid var(--blackColor);
     border-radius: 4px;
+    outline: none;
     cursor: pointer;
+    transition: .2s var(--transitionTimingFunction);
+    transition-property: background-color, color;
+}
+button:hover {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
 }
 
 .flex {

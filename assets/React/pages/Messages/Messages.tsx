@@ -9,7 +9,7 @@ export default function() {
         axios.get("/api/apologies")
         .then(res => {
             setApologies(res.data["hydra:member"]);
-        })
+        });
 
     }, []);
 
