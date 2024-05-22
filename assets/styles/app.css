@@ -87,6 +87,12 @@ a {
     display: flex;
 }
 
+.align_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mb_20 {
     margin-bottom: 20px;
 }
@@ -99,7 +105,7 @@ a {
 .app_nav {
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to bottom, #539DC2AA, #D5954BAA);
+    background-color: #F8F8F8;
     height: 100vh;
     padding-top: var(--appVerticalPadding);
     padding-bottom: var(--appVerticalPadding);
@@ -130,6 +136,7 @@ a {
 
 .app_main {
     position: relative;
+    flex-grow: 1;
     padding: var(--appVerticalPadding) 40px;
 }
 

@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { APP_TITLE } from "../../../const";
 import ButtonGenerateApology from "./ButtonGenerateApology";
+import axios from "axios";
 
 export default function() {
-    const [apology, setApology] = useState(null);
+    const [apology, setApology] = useState("");
+
+    useEffect(() => {
+        
+        axios.get('/api/apologies')
+        .then(res => {
+            setApology(res.data['hydra:member'][0].message);
+        })
+
+    }, []);
 
     return <>
         <h1 className="mb_40">{ APP_TITLE }</h1>
-        <p>{ apology ?? "Chargement de l'excuse..." }</p>
+        <p>{ apology.length > 0 ? apology : "Chargement de l'excuse..." }</p>
         <ButtonGenerateApology />
     </>;
 }
