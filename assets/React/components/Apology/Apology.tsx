@@ -6,6 +6,6 @@ export default function({ apology }) {
             <span className="code">{ apology.http_code.code }</span>
             <span className="tag">{ apology.tag.libelle }</span>
         </div>
-        <p>{ apology.message }</p>
+        <p className="message">{ apology.message }</p>
     </div>;
 }

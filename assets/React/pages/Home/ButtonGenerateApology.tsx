@@ -52,8 +52,8 @@ export default function({ setApology }) {
     return <button disabled={loading} onClick={handleClick}>
         {loading ?
             <Oval
-                height="20"
-                width="20"
+                height="26"
+                width="26"
                 color="#4fa94d"
                 ariaLabel="oval-loading"
                 wrapperClass="align_center"

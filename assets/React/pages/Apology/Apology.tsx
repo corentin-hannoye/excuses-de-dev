@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Error404 from "../Errors/Error404";
 import axios from "axios";
+import Apology from "../../Components/Apology/Apology";
 
 export default function() {
     // Récupération du paramètre passé dans l'URL
@@ -41,7 +42,9 @@ export default function() {
             <p>Chargement...</p> :
             apology ?
                 apology.map((i: any) => (
-                    <p>{ i.message }</p>
+                    <React.Fragment>
+                        <Apology apology={i} />
+                    </React.Fragment>
                 )) :
                 <>
                     <h1 className="mb_40">Erreur</h1>
