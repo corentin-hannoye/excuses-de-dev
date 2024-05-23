@@ -90,7 +90,7 @@ img {
 
 button {
     font: inherit;
-    background-color: #fff;
+    background-color: var(--whiteColor);
     width: 100%;
     max-width: 400px;
     padding: 12px 40px;
@@ -104,6 +104,11 @@ button {
 button:hover {
     background-color: var(--blackColor);
     color: var(--whiteColor);
+}
+button:disabled {
+    background-color: var(--whiteColor);
+    border-color: #eeeeee;
+    cursor: default;
 }
 
 .flex {
