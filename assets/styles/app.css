@@ -114,6 +114,12 @@ button:disabled {
 .flex {
     display: flex;
 }
+.flex_w {
+    flex-wrap: wrap;
+}
+.gap_10 {
+    gap: 10px;
+}
 
 .align_center {
     display: flex;
@@ -124,6 +130,9 @@ button:disabled {
     height: 100%;
 }
 
+.mb_10 {
+    margin-bottom: 10px;
+}
 .mb_20 {
     margin-bottom: 20px;
 }
@@ -194,4 +203,27 @@ button:disabled {
 
 /* Apologies */
 
+.apology_item {
+    background-color: var(--whiteColor);
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #cccccc;
+}
 
+.apology_item .code {
+    display: inline-block;
+    background-color: #ff865750;
+    padding: 2px 8px;
+    border: 1px solid #ff8657;
+    border-radius: 4px;
+}
+
+.apology_item .tag {
+    display: inline-block;
+    background-color: #57a5ff50;
+    padding: 2px 8px;
+    border: 1px solid #57a5ff;
+    border-radius: 4px;
+}

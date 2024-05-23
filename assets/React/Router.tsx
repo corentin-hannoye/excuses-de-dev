@@ -8,9 +8,9 @@ import Home from "./Pages/Home/Home";
 import Lost from "./Pages/Lost/Lost";
 import Root from "./Root";
 import Error404 from "./Pages/Errors/Error404";
-import Apologies from "./Pages/Apologies/Apologies";
-import Apology from "./Pages/Apologies/Apology";
-import AddApology from "./Pages/Apologies/AddApology";
+import Apologies from "./Pages/Apology/Apologies";
+import Apology from "./Pages/Apology/Apology";
+import AddApology from "./Pages/Apology/AddApology";
 
 const router = createBrowserRouter([
     {
