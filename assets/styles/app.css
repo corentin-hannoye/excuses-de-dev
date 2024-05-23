@@ -131,7 +131,7 @@ button:disabled {
     margin-bottom: 40px;
 }
 
-.title_sticky {
+.title {
     position: sticky;
     top: 0;
     transform: translateX(calc(var(--appVerticalPadding) * -1));

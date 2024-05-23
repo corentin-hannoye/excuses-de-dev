@@ -21,7 +21,7 @@ export default function({ setApology }) {
         }
 
         // Génération d'un numéro aléatoire pour piocher de façon aléatoirement dans le tableau passé en paramètre
-        const delayNumber: number = delay ? Math.floor(Math.random() * (5 - 1 + 1) + 1) * 1000 : 0;        
+        const delayNumber: number|null = (delay ? Math.floor(Math.random() * (5 - 1 + 1) + 1) * 1000 : null);        
 
         setLoading(true);
 
@@ -58,7 +58,7 @@ export default function({ setApology }) {
                 ariaLabel="oval-loading"
                 wrapperClass="align_center"
             /> :
-            'Générer' 
+            "Générer" 
         }
     </button>;
 }

@@ -4,12 +4,13 @@ import {
     createBrowserRouter,
     RouterProvider
 } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Lost from "./pages/Lost/Lost";
+import Home from "./Pages/Home/Home";
+import Lost from "./Pages/Lost/Lost";
 import Root from "./Root";
-import Error404 from "./pages/Errors/Error404";
-import Messages from "./pages/Messages/Messages";
-import Message from "./pages/Messages/Message";
+import Error404 from "./Pages/Errors/Error404";
+import Apologies from "./Pages/Apologies/Apologies";
+import Apology from "./Pages/Apologies/Apology";
+import AddApology from "./Pages/Apologies/AddApology";
 
 const router = createBrowserRouter([
     {
@@ -26,11 +27,15 @@ const router = createBrowserRouter([
             },
             {
                 path: "apologies",
-                element: <Messages />
+                element: <Apologies />
             },
             {
                 path: ":http_code",
-                element: <Message />
+                element: <Apology />
+            },
+            {
+                path: "apology/add",
+                element: <AddApology />
             },
             {
                 path: "*",
