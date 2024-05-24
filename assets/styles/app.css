@@ -93,6 +93,7 @@ input,
 textarea,
 button {
     font: inherit;
+    color: var(--blackColor);
 }
 
 .flex {
@@ -155,6 +156,7 @@ button {
     position: sticky;
     top: 0;
     background-color: #F8F8F8;
+    min-width: 100px;
     height: 100vh;
     padding-top: var(--appVerticalPadding);
     padding-bottom: var(--appVerticalPadding);
@@ -238,12 +240,13 @@ form {
     max-width: 400px;
 }
 
-label p {
+form .label {
     margin-bottom: 4px;
 }
 
 input,
 textarea {
+    display: block;
     width: 100%;
     padding: 4px 8px;
     border: 1px solid #cccccc;

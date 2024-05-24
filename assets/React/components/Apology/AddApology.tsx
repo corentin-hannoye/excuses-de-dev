@@ -20,7 +20,7 @@ export default function() {
         </div>
         <div className="mb_20">
             <label>
-                <p>Code HTTP</p>
+                <p className="label">Code HTTP</p>
                 <input type="text" {...register("http_code", {
                     required: "Veuillez saisir un code HTTP valide",
                     pattern: {
@@ -33,7 +33,7 @@ export default function() {
         </div>
         <div className="mb_20">
             <label>
-                <p>Tag</p>
+                <p className="label">Tag</p>
                 <input type="text" {...register("tag", {
                     required: "Veuillez saisir un tag valide"
                 })} />
@@ -42,7 +42,7 @@ export default function() {
         </div>
         <div className="mb_20">
             <label>
-                <p>Message</p>
+                <p className="label">Message</p>
                 <textarea rows="3" {...register("message", {
                     required: "Veuillez saisir un message valide"
                 })} />
