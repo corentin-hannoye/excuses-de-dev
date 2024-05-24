@@ -137,6 +137,13 @@ button {
     border-bottom: 1px solid #eeeeee;
 }
 
+.success {
+    background-color: #3da03050;
+    padding: 4px 8px;
+    border: 1px solid #3da030;
+    border-radius: 4px;
+}
+
 /* App */
 
 .app_link {
@@ -235,14 +242,18 @@ label p {
     margin-bottom: 4px;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     padding: 4px 8px;
     border: 1px solid #cccccc;
     border-radius: 4px;
     outline: none;
+    resize: none;
+    transition: border-color .2s var(--transitionTimingFunction);
 }
-input:hover {
+input:hover,
+textarea:hover {
     border-color: var(--blackColor);
 }
 

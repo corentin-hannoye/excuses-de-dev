@@ -21,7 +21,7 @@ export default function() {
     useEffect(() => {
         ky.get(`/api/http_codes?code=${idMessage}`, {
             headers: {
-                'Accept': 'application/ld+json'
+                "Accept": "application/ld+json"
             },
         })
         .json()

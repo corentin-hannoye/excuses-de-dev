@@ -1,16 +1,21 @@
-import axios from "axios";
+import ky from "ky";
 import React, { useState, useEffect } from "react";
 import { Oval } from "react-loader-spinner";
 
-export default function({ setApology }) {
+export default function({ setApology }: { setApology: (param: any) => void }) {
     const [apologies, setApologies] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
 
-        axios.get("/api/apologies")
+        ky.get("/api/apologies", {
+            headers: {
+                "Accept": "application/ld+json"
+            },
+        })
+        .json()
         .then(res => {
-            getRandomApology(res.data["hydra:member"], false);
+            getRandomApology(res["hydra:member"], false);
         });
 
     }, []);
@@ -23,6 +28,7 @@ export default function({ setApology }) {
         // Génération d'un numéro aléatoire pour piocher de façon aléatoirement dans le tableau passé en paramètre
         const delayNumber: number|null = (delay ? Math.floor(Math.random() * (5 - 1 + 1) + 1) * 1000 : null);        
 
+        setApology("");
         setLoading(true);
 
         setTimeout(() => {

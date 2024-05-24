@@ -10,7 +10,7 @@ export default function() {
         ky
             .get("/api/apologies", {
                 headers: {
-                    'Accept': 'application/ld+json'
+                    "Accept": "application/ld+json"
                 },
             })
             .json()

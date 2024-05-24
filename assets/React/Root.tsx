@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
+import { ToastContainer } from "react-toastify";
 
 export default function() {
     return <>
@@ -12,6 +13,7 @@ export default function() {
                 <Outlet />
             </main>
         </div>
+        <ToastContainer />
         <ScrollRestoration />
     </>;
 }
