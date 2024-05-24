@@ -1,6 +1,6 @@
-import ky from "ky";
 import React, { useState, useEffect } from "react";
 import { Oval } from "react-loader-spinner";
+import { findAllApologies } from "../../Services/API/API";
 
 export default function({ setApology }: { setApology: (param: any) => void }) {
     const [apologies, setApologies] = useState([]);
@@ -8,15 +8,13 @@ export default function({ setApology }: { setApology: (param: any) => void }) {
 
     useEffect(() => {
 
-        ky.get("/api/apologies", {
-            headers: {
-                "Accept": "application/ld+json"
-            },
-        })
-        .json()
-        .then(res => {
-            getRandomApology(res["hydra:member"], false);
-        });
+        (async () => {
+
+            const data = await findAllApologies();
+
+            getRandomApology(data["hydra:member"], false);
+
+        })();
 
     }, []);
 

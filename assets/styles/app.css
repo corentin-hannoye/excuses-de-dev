@@ -259,6 +259,14 @@ input:hover,
 textarea:hover {
     border-color: var(--blackColor);
 }
+input.error,
+textarea.error {
+    border-color: var(--toastify-color-error);
+}
+
+.error {
+    color: var(--toastify-color-error);
+}
 
 .app_btn {
     background-color: var(--whiteColor);

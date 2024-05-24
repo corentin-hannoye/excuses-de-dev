@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from "react";
-import ky from "ky";
 import Apology from "../../Components/Apology/Apology";
+import { findAllApologies } from "../../Services/API/API";
 
 export default function() {
     const [apologies, setApologies] = useState([]);
 
     useEffect(() => {
-        
-        ky
-            .get("/api/apologies", {
-                headers: {
-                    "Accept": "application/ld+json"
-                },
-            })
-            .json()
-            .then(res => {
-                setApologies(res["hydra:member"]);
-            });
+
+        (async () => {
+
+            const data = await findAllApologies();
+
+            setApologies(data["hydra:member"]);
+
+        })();
 
     }, []);
 

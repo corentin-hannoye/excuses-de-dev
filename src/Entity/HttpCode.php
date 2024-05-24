@@ -5,6 +5,8 @@ namespace App\Entity;
 use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Metadata\ApiFilter;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Post;
 use App\Repository\HttpCodeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -14,7 +16,11 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ApiResource(
     paginationEnabled: false,
-    normalizationContext: ['groups' => 'read:item']
+    normalizationContext: ['groups' => 'read:item'],
+    operations: [
+        new GetCollection(),
+        new Post()
+    ]
 )]
 #[ApiFilter(SearchFilter::class, properties: ['code' => 'exact'])]
 #[ORM\Entity(repositoryClass: HttpCodeRepository::class)]
