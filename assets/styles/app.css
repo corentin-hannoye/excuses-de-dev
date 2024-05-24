@@ -129,7 +129,7 @@ button {
     top: 0;
     transform: translateX(calc(var(--appVerticalPadding) * -1));
     background-color: #fff5;
-    -wekbit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     width: calc(100% + var(--appVerticalPadding) * 2);
     padding: 12px;
