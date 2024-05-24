@@ -257,7 +257,7 @@ textarea:hover {
     border-color: var(--blackColor);
 }
 
-button {
+.app_btn {
     background-color: var(--whiteColor);
     width: 100%;
     max-width: 400px;
@@ -269,11 +269,11 @@ button {
     transition: .2s var(--transitionTimingFunction);
     transition-property: background-color, color;
 }
-button:hover {
+.app_btn:hover {
     background-color: var(--blackColor);
     color: var(--whiteColor);
 }
-button:disabled {
+.app_btn:disabled {
     background-color: var(--whiteColor);
     border-color: #eeeeee;
     cursor: default;

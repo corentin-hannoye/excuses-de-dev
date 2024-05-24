@@ -9,7 +9,7 @@ export default function() {
 
     const onSubmit = (data: SubmitHandler<FieldValues>) => {
 
-        toast("Excuse ajoutée avec succès");
+        toast.success("Excuse ajoutée avec succès");
         
 
     };
@@ -50,7 +50,7 @@ export default function() {
             </label>
         </div>
         <div>
-            <button>Ajouter</button>
+            <button className="app_btn">Ajouter</button>
         </div>
     </form>;
 }

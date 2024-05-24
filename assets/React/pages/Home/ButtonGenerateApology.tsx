@@ -55,7 +55,7 @@ export default function({ setApology }: { setApology: (param: any) => void }) {
         getRandomApology(apologies, true);
     }
 
-    return <button disabled={loading} onClick={handleClick}>
+    return <button className="app_btn" disabled={loading} onClick={handleClick}>
         {loading ?
             <Oval
                 height="26"

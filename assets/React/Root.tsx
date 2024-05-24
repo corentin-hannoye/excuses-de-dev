@@ -13,7 +13,7 @@ export default function() {
                 <Outlet />
             </main>
         </div>
-        <ToastContainer />
+        <ToastContainer position="top-right" />
         <ScrollRestoration />
     </>;
 }
