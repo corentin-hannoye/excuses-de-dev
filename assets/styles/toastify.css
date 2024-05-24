@@ -278,8 +278,8 @@
     cursor: pointer;
     opacity: 0.7;
     transition: 0.3s ease;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    /* -ms-flex-item-align: start; */
+        /* align-self: flex-start; */
     z-index: 1;
   }
   .Toastify__close-button--light {
