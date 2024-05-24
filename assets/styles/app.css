@@ -294,3 +294,20 @@ textarea.error {
     border-color: #eeeeee;
     cursor: default;
 }
+
+/* Modal */
+
+.add svg {
+    width: 48px;
+    height: 48px;
+}
+
+.add {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: var(--whiteColor);
+    border-radius: 50%;
+    cursor: pointer;
+}

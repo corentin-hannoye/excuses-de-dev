@@ -1,9 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import {
-    createBrowserRouter,
-    RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Lost from "./Pages/Lost/Lost";
 import Root from "./Root";
@@ -30,12 +27,12 @@ const router = createBrowserRouter([
                 element: <Apologies />
             },
             {
-                path: ":http_code",
-                element: <Apology />
-            },
-            {
                 path: "apology/add",
                 element: <AddApology />
+            },
+            {
+                path: ":http_code",
+                element: <Apology />
             },
             {
                 path: "*",
