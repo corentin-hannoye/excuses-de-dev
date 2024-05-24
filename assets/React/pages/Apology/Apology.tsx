@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Error404 from "../Errors/Error404";
-import axios from "axios";
+import ky from "ky";
 import Apology from "../../Components/Apology/Apology";
 
 export default function() {
@@ -19,18 +19,23 @@ export default function() {
 
     // Vérification du code passé en paramètre + get du message associé
     useEffect(() => {
-        axios.get(`/api/http_codes?code=${idMessage}`)
+        ky.get(`/api/http_codes?code=${idMessage}`, {
+            headers: {
+                'Accept': 'application/ld+json'
+            },
+        })
+        .json()
         .then(res => {
 
-            if(res.data["hydra:member"].length == 0) {
+            if(res["hydra:member"].length == 0) {
                 setLoading(false);
             }
 
-            axios.get(`/api/apologies?http_code=/api/http_codes/${res.data["hydra:member"][0].id}`)
+            ky.get(`/api/apologies?http_code=/api/http_codes/${res["hydra:member"][0].id}`)
             .then(res => {
 
-                if(res.data["hydra:member"].length > 0) {
-                    setApology(res.data["hydra:member"]);
+                if(res["hydra:member"].length > 0) {
+                    setApology(res["hydra:member"]);
                 }
                 setLoading(false);
             });
