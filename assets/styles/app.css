@@ -181,7 +181,9 @@ button {
 .app_nav {
     position: sticky;
     top: 0;
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
+    background: bottom no-repeat url(/assets/media/test.png);
+    background-position: 20% 90%;
     min-width: 100px;
     height: 100vh;
     padding-top: var(--appVerticalPadding);
