@@ -21,8 +21,8 @@ export default function() {
         <h1 className="title mb_40">Liste d'excuses</h1>
         {
             apologies.length > 0 ? (
-                apologies.map((apology: any, id: number) =>
-                    <React.Fragment key={id}>
+                apologies.map((apology: any, index: number) =>
+                    <React.Fragment key={index}>
                         <Apology apology={apology} />
                     </React.Fragment>
                 )):

@@ -94,6 +94,10 @@ img {
     max-width: 100%;
 }
 
+svg {
+    outline: none;
+}
+
 input,
 textarea,
 button {
@@ -151,6 +155,10 @@ button {
 }
 
 /* App */
+
+.app_title {
+    font-size: 3rem;
+}
 
 .app_link {
     color: #539DC2;
@@ -297,11 +305,6 @@ textarea.error {
 
 /* Modal */
 
-.add svg {
-    width: 48px;
-    height: 48px;
-}
-
 .add {
     display: flex;
     position: absolute;
@@ -310,4 +313,13 @@ textarea.error {
     background-color: var(--whiteColor);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.add svg {
+    fill: grey;
+    width: 56px;
+    height: 56px;
+}
+.add svg:hover {
+    fill: var(--toastify-color-success);
 }

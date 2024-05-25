@@ -20,20 +20,16 @@ export default function() {
     // Vérification du code passé en paramètre + get du message associé
     useEffect(() => {
 
-        setLoading(true);
-
         (async () => {
 
             const httpCode = await findOneHttpCodeByCode(parseInt(httpCodeValue));
 
-            if(!httpCode) {
-                setLoading(false);
-                return;
+            if(httpCode) {
+                const apology = await findApologyByHttpCode(httpCode.id);
+
+                setApology(apology);
             }
 
-            const apology = await findApologyByHttpCode(httpCode.id);
-
-            setApology(apology);
             setLoading(false);
 
         })();
@@ -44,9 +40,9 @@ export default function() {
         {loading ?
             <p>Chargement...</p> :
             apology ?
-                apology.map((i: any) => (
-                    <React.Fragment>
-                        <Apology apology={i} />
+                apology.map((apology: any, i: number) => (
+                    <React.Fragment key={i}>
+                        <Apology apology={apology} />
                     </React.Fragment>
                 )) :
                 <>
