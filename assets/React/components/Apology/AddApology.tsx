@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import { create, findOneHttpCodeByCode, findOneTagByLibelle } from "../../Services/API/API";
 
-export default function() {
+export default function({ successCallback = null }) {
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: "onTouched"
     });
@@ -40,6 +40,7 @@ export default function() {
 
                 // Réinitialisation du formulaire
                 reset();
+                (successCallback && successCallback());
 
             }
 
