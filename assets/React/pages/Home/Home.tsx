@@ -23,7 +23,7 @@ export default function() {
     return <>
         <div className="align_center">
             <h1 className="app_title mb_40">{ APP_TITLE }</h1>
-            <p className="mb_20" style={{"marginBottom": "2000px"}}>{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
+            <p className="mb_20">{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
             <ButtonGenerateApology setApology={setApology} />
         </div>
         <div className="add" onClick={handleClickVisibleModal}>
