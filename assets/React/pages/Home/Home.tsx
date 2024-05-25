@@ -23,8 +23,10 @@ export default function() {
     return <>
         <div className="align_center">
             <h1 className="app_title mb_40">{ APP_TITLE }</h1>
-            <p className="mb_20">{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
-            <ButtonGenerateApology setApology={setApology} />
+            <div className="anim_reveal max_w_400">
+                <p className="mb_20">{ apology.length > 0 ? apology : "Chargement de la phrase" }</p>
+                <ButtonGenerateApology setApology={setApology} />
+            </div>
         </div>
         <div className="add" onClick={handleClickVisibleModal}>
             <FaCirclePlus data-tooltip-id="add-tooltip" data-tooltip-content="Ajouter" />

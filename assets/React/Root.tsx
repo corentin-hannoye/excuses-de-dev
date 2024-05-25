@@ -11,6 +11,9 @@ export default function() {
             </div>
             <main className="app_main">
                 <Outlet />
+                <div className="credit">
+                    <p>Corentin Hannoye</p>
+                </div>
             </main>
         </div>
         <ToastContainer position="top-right" />

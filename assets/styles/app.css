@@ -138,6 +138,11 @@ button {
     margin-bottom: 40px;
 }
 
+.max_w_400 {
+    width: 100%;
+    max-width: 400px;
+}
+
 .title {
     position: sticky;
     top: 0;
@@ -166,11 +171,42 @@ button {
 /* App */
 
 .app_title {
-    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
     background-image: linear-gradient(to top, #539DC250, #539DC2);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+    font-size: 3rem;
+    padding: var(--appVerticalPadding);
+    animation: revealAppTitle 2s, translateAppTitle 2s 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes revealAppTitle {
+    0% {
+        position: absolute;
+        opacity: 0;
+    }
+    50% {
+        position: absolute;
+        opacity: .5;
+    }
+    100% {
+        position: absolute;
+        opacity: 1;
+    }
+}
+@keyframes translateAppTitle {
+    0% {
+        top: 50%;
+    }
+    100% {
+        top: 5%;
+        transform: translateY(0);
+    }
 }
 
 .app_link {
@@ -373,4 +409,29 @@ textarea.error {
     margin: 0 auto;
     padding: 60px 40px;
     border-radius: 4px;
+}
+
+/* Other */
+
+.anim_reveal {
+    opacity: 0;
+    visibility: hidden;
+    animation: reveal 2s 2s ease forwards;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.credit {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
