@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import { create, findOneHttpCodeByCode, findOneTagByLibelle } from "../../Services/API/API";
+import { Oval } from "react-loader-spinner";
 
 export default function({ successCallback = null }) {
+    const [loading, setLoading] = useState(false);
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: "onTouched"
     });
 
     const onSubmit = async (data: any) => {
+        setLoading(true);
 
         const httpCodeValue = parseInt(data.http_code);
         const TagValue = data.tag;
@@ -45,7 +48,7 @@ export default function({ successCallback = null }) {
             }
 
         }
-
+        setLoading(false);
     };
 
     // Rendu du formulaire
@@ -85,7 +88,18 @@ export default function({ successCallback = null }) {
             </label>
         </div>
         <div>
-            <button className="app_btn">Ajouter</button>
+            <button className="app_btn">
+            {loading ?
+                <Oval
+                    height="26"
+                    width="26"
+                    color="#4fa94d"
+                    ariaLabel="oval-loading"
+                    wrapperClass="align_center"
+                /> :
+                "Ajouter" 
+            }
+            </button>
         </div>
     </form>;
 }

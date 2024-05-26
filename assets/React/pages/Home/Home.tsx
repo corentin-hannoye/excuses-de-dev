@@ -32,8 +32,10 @@ export default function() {
             <FaCirclePlus data-tooltip-id="add-tooltip" data-tooltip-content="Ajouter" />
             <Tooltip id="add-tooltip" />
         </div>
-        <Modal visible={visibleModal} setVisible={handleClickVisibleModal}>
-            <AddApology successCallback={handleClickVisibleModal} />
-        </Modal>
+        <Modal visible={visibleModal} setVisible={handleClickVisibleModal}
+            children={
+                <AddApology successCallback={handleClickVisibleModal} />
+            }
+        />
     </>;
 }

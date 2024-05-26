@@ -1,23 +1,22 @@
 import React, { useEffect, useRef } from "react";
 
-export default function(props) {
-
+export default function ({ visible, setVisible, children }: { visible: boolean, setVisible: (e: any) => void, children: React.Element }): React.JSX.Element {
     const modalElement = useRef();
 
     useEffect(() => {
-        if(props.visible) {
+        if(visible) {
             document.body.classList.add("modal_open");
         } else {
             document.body.classList.remove("modal_open");
         }
-    }, [props.visible]);
+    }, [visible]);
 
-    return <div className={"modal" + (props.visible ? " show" : "")}>
+    return <div className={"modal" + (visible ? " show" : "")}>
         <div className="modal_bg"></div>
-        <div ref={modalElement} className="modal_container toggle_modal" onClick={props.setVisible}>
+        <div ref={modalElement} className="modal_container toggle_modal" onClick={setVisible}>
             <div className="modal_content">
-                { props.children }
+                { children }
             </div>
         </div>
-    </div> 
+    </div>;
 }
