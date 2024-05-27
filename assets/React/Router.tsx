@@ -1,13 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import Lost from "./Pages/Lost/Lost";
+import Home from "./b/Home/Home";
+import Lost from "./b/Lost/Lost";
 import Root from "./Root";
-import Error404 from "./Pages/Errors/Error404";
-import Apologies from "./Pages/Apology/Apologies";
-import Apology from "./Pages/Apology/Apology";
-import AddApology from "./Pages/Apology/AddApology";
+import Error404 from "./b/Errors/Error404";
+import Apologies from "./b/Apology/Apologies";
+import Apology from "./b/Apology/Apology";
+import AddApology from "./b/Apology/AddApology";
 
 const router = createBrowserRouter([
     {

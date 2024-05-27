@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Error404 from "../Errors/Error404";
-import Apology from "../../Components/Apology/Apology";
+import Apology from "../../a/Apology/Apology";
 import { findApologyByHttpCode, findOneHttpCodeByCode } from "../../Services/API/API";
 
 export default function() {

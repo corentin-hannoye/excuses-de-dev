@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Apology from "../../Components/Apology/Apology";
+import Apology from "../../a/Apology/Apology";
 import { findAllApologies } from "../../Services/API/API";
 
 export default function() {

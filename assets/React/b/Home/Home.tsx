@@ -3,8 +3,8 @@ import { APP_TITLE } from "../../../const";
 import ButtonGenerateApology from "./ButtonGenerateApology";
 import { FaCirclePlus } from "react-icons/fa6";
 import { Tooltip } from 'react-tooltip'
-import Modal from "../../Components/Modal/Modal";
-import AddApology from "../../Components/Apology/AddApology";
+import Modal from "../../a/Modal/Modal";
+import AddApology from "../../a/Apology/AddApology";
 
 export default function() {
     const [apology, setApology] = useState("");
