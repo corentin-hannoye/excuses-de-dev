@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url "test"]
 
 
 
@@ -11,12 +11,10 @@
   <p align="center">
       Sujet Exam 2024 - entrée B1 - ForEach
       <br />
-      <a href="https://github.com/github_username/repo_name"><strong>Explorer les documents »</strong></a>
+      <a href="/test"><strong>Explorer les documents »</strong></a>
       <br />
       <br />
       <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-      ·
-      <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
