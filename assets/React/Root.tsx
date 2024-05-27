@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
-import Navigation from "./a/Navigation/Navigation";
+import Navigation from "./Components/Navigation/Navigation";
 import { ToastContainer } from "react-toastify";
 
 export default function() {

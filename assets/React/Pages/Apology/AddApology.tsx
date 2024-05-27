@@ -1,5 +1,5 @@
 import React from "react";
-import AddApology from "../../a/Apology/AddApology";
+import AddApology from "../../Components/Apology/AddApology";
 
 export default function() {
     return <>
