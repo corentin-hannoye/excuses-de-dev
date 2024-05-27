@@ -14,7 +14,7 @@
       <a href="/ressources/docs"><strong>Explorer les documents »</strong></a>
       <br />
       <br />
-      <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+      <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug_report.md">Rapporter un bug</a>
   </p>
 </div>
 
@@ -45,18 +45,19 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## À propos du projet
 
-[![Product Name Screen Shot][product-screenshot]](http://localhost:8000)
+[![product-screenshot]](http://localhost:8000)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
 
-### Built With
+### Construit avec
 
 * [![React][React.js]][React-url]
 * [![Symfony][Symfony.com]][Symfony-url]
+* [![Pnpm][Pnpm.com]][Pnpm-url]
 * [![Webpack][Webpack.com]][Webpack-url]
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
@@ -64,12 +65,12 @@
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Commencer
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prérequis
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -127,3 +128,5 @@ Project Link: [https://github.com/corentin-hannoye/excuses-de-dev](https://githu
 [Symfony-url]: https://symfony.com
 [Webpack.com]: https://img.shields.io/badge/Webpack-1F2937?style=for-the-badge&logo=webpack&logoColor=white
 [Webpack-url]: https://webpack.js.org
+[Pnpm.com]: https://img.shields.io/badge/PNPM-1F2937?style=for-the-badge&logo=pnpm
+[Pnpm-url]: https://pnpm.io
