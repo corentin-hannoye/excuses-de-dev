@@ -11,7 +11,7 @@
   <p align="center">
       Sujet Exam 2024 - entrée B1 - ForEach
       <br />
-      <a href="/ressources/docs"><strong>Explorer les documents »</strong></a>
+      <a href="/ressources"><strong>Explorer les documents »</strong></a>
       <br />
       <br />
       <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug_report.md">Rapporter un bug</a>
@@ -73,6 +73,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 
 * Docker : https://docs.docker.com/engine/install/
 * PNPM : https://pnpm.io/installation
+* Symfony CLI OU Composer : https://symfony.com/download | https://getcomposer.org/download/
 
 ### Installation
 
@@ -100,7 +101,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
    ```sh
    symfony composer i --no-dev --optimize-autoloader
    ```
-6. Lancement des containers Docker (Apache, PHP, MySQL)
+6. Lancement des containeurs Docker (Apache, PHP, MySQL)
    ```sh
    docker compose -f .\docker\docker-compose.yml up
    ```
