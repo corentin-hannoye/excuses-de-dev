@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-[![LinkedIn][linkedin-shield]][linkedin-url "test"]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -11,7 +11,7 @@
   <p align="center">
       Sujet Exam 2024 - entrée B1 - ForEach
       <br />
-      <a href="/test"><strong>Explorer les documents »</strong></a>
+      <a href="/ressources/docs"><strong>Explorer les documents »</strong></a>
       <br />
       <br />
       <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -47,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](http://localhost:8000)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
@@ -118,9 +118,9 @@ Project Link: [https://github.com/corentin-hannoye/excuses-de-dev](https://githu
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: /ressources/media/screenshot-les-excuses-de-dev.png
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin
-[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/
+[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/ "az"
 [React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
 [React-url]: https://reactjs.org
 [Symfony.com]: https://img.shields.io/badge/Symfony-1F2937?style=for-the-badge&logo=symfony
