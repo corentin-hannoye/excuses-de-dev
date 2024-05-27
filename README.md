@@ -79,13 +79,21 @@ Les étapes suivantes permettent de lancer le projet avec Docker
    ```sh
    git clone https://github.com/corentin-hannoye/excuses-de-dev
    ```
-2. Install NPM packages
+2. Installation des packages NPM
    ```sh
-   npm install
+   pnpm i
    ```
-3. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   OU
+   ```sh
+   npm i
+   ```
+3. Installation des dépendances PHP
+   ```sh
+   composer i --no-dev --optimize-autoloader
+   ```
+   OU
+   ```sh
+   symfony composer i --no-dev --optimize-autoloader
    ```
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
@@ -95,7 +103,10 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[![apologies-screenshot]](http://localhost:8000)
+[![apology-screenshot]](http://localhost:8000)
+[![add-apology-screenshot]](http://localhost:8000)
+[![lost-screenshot]](http://localhost:8000)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
@@ -112,6 +123,10 @@ Lien du projet : [https://github.com/corentin-hannoye/excuses-de-dev](https://gi
 
 
 [product-screenshot]: /ressources/media/screenshot-les-excuses-de-dev.png
+[apologies-screenshot]: /ressources/media/screenshot-les-excuses-de-dev-apologies.png
+[apology-screenshot]: /ressources/media/screenshot-les-excuses-de-dev-apology.png
+[add-apology-screenshot]: /ressources/media/screenshot-les-excuses-de-dev-add-apology.png
+[lost-screenshot]: /ressources/media/screenshot-les-excuses-de-dev-lost.png
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin
 [linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/ "LinkedIn"
 [React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
