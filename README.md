@@ -72,6 +72,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 ### Prérequis
 
 * Docker : https://docs.docker.com/engine/install/
+* PNPM : https://pnpm.io/installation
 
 ### Installation
 
@@ -79,21 +80,29 @@ Les étapes suivantes permettent de lancer le projet avec Docker
    ```sh
    git clone https://github.com/corentin-hannoye/excuses-de-dev
    ```
-2. Installation des packages NPM
+2. Se placer à l'intérieur du dossier
+   ```sh
+   cd excuses-de-dev
+   ```
+3. Installation des paquets NPM
    ```sh
    pnpm i
    ```
-   OU
+4. Création du dossier assets contenant le front-end de l'application
    ```sh
-   npm i
+   pnpm run build
    ```
-3. Installation des dépendances PHP
+5. Installation des dépendances PHP
    ```sh
    composer i --no-dev --optimize-autoloader
    ```
    OU
    ```sh
    symfony composer i --no-dev --optimize-autoloader
+   ```
+6. Lancement des containers Docker (Apache, PHP, MySQL)
+   ```sh
+   docker compose -f .\docker\docker-compose.yml up
    ```
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
@@ -115,7 +124,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 <!-- CONTACT -->
 ## Contact
 
-Corentin HANNOYE - [@corentin_ha](https://x.com/corentin_ha) - corentin_hny@icloud.com
+Corentin HANNOYE - [@corentin_ha](https://x.com/corentin_ha "@corentin_ha") - corentin_hny@icloud.com
 
 Lien du projet : [https://github.com/corentin-hannoye/excuses-de-dev](https://github.com/corentin-hannoye/excuses-de-dev)
 
