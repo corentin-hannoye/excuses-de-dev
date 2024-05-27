@@ -13,7 +13,7 @@ export default function ({ visible, setVisible, children }: { visible: boolean, 
 
     return <div className={"modal" + (visible ? " show" : "")}>
         <div className="modal_bg"></div>
-        <div ref={modalElement} className="modal_container toggle_modal" onClick={setVisible}>
+        <div ref={modalElement} className="modal_container toggle_modal" onMouseDown={setVisible}>
             <div className="modal_content">
                 { children }
             </div>
