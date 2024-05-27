@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br /> 
 <div align="center">
-  <h2 align="center">Les excuses de dev</h2>
+  <h3 align="center">Les excuses de dev</h3>
 
   <p align="center">
       Sujet Exam 2024 - entrée B1 - ForEach
@@ -67,13 +67,11 @@
 <!-- GETTING STARTED -->
 ## Commencer
 
+Les étapes suivantes permettent de lancer le projet avec Docker
+
 ### Prérequis
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install -g pnpm
-  ```
+* Docker : https://docs.docker.com/engine/install/
 
 ### Installation
 
@@ -99,8 +97,6 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
@@ -117,12 +113,12 @@ Lien du projet : [https://github.com/corentin-hannoye/excuses-de-dev](https://gi
 
 [product-screenshot]: /ressources/media/screenshot-les-excuses-de-dev.png
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin
-[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/
+[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/ "LinkedIn"
 [React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
-[React-url]: https://reactjs.org
+[React-url]: https://reactjs.org "ReactJs"
 [Symfony.com]: https://img.shields.io/badge/Symfony-1F2937?style=for-the-badge&logo=symfony
-[Symfony-url]: https://symfony.com
-[Webpack.com]: https://img.shields.io/badge/Webpack-1F2937?style=for-the-badge&logo=webpack&logoColor=white
-[Webpack-url]: https://webpack.js.org
+[Symfony-url]: https://symfony.com "Symfony"
 [Pnpm.com]: https://img.shields.io/badge/PNPM-1F2937?style=for-the-badge&logo=pnpm
-[Pnpm-url]: https://pnpm.io
+[Pnpm-url]: https://pnpm.io "PNPM"
+[Webpack.com]: https://img.shields.io/badge/Webpack-1F2937?style=for-the-badge&logo=webpack&logoColor=white
+[Webpack-url]: https://webpack.js.org "Webpack"

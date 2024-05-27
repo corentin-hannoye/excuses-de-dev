@@ -1,0 +1,35 @@
+services:
+  apache:
+    container_name: apache
+    image: httpd
+    ports:
+      - 8080:80
+    volumes:
+      - ../:/usr/local/apache2/htdocs/
+      - ./apache/apache.conf:/usr/local/apache2/conf/httpd.conf
+    depends_on:
+        - mysql
+  php:
+    container_name: php
+    build:
+      context: ./php
+    volumes:
+      - ../:/usr/local/apache2/htdocs/
+    depends_on:
+        - apache
+  mysql:
+    container_name: mysql
+    image: mysql
+    environment:
+      MYSQL_USER: "ForEachApologies"
+      MYSQL_DATABASE: "dev_apologies"
+      MYSQL_PASSWORD: "!forApologies@each.User"
+      MYSQL_ROOT_PASSWORD: "!forApologies@each.User"
+    ports:
+      - 3306:3306
+    volumes:
+      - data:/var/lib/mysql
+      - ./data/data.sql:/docker-entrypoint-initdb.d/data.sql
+
+volumes:
+  data:

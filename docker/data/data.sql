@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
--- Host: localhost    Database: dev_apologys
+-- Host: localhost    Database: dev_apologies
 -- ------------------------------------------------------
 -- Server version	8.0.36
 
@@ -16,6 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `apology`
+--
+
+DROP TABLE IF EXISTS `apology`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `apology` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `http_code_id` int NOT NULL,
+  `tag_id` int NOT NULL,
+  `message` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_91F3852C22C1DBDC` (`http_code_id`),
+  KEY `IDX_91F3852CBAD26311` (`tag_id`),
+  CONSTRAINT `FK_91F3852C22C1DBDC` FOREIGN KEY (`http_code_id`) REFERENCES `http_code` (`id`),
+  CONSTRAINT `FK_91F3852CBAD26311` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `apology`
 --
 
@@ -26,6 +46,21 @@ INSERT INTO `apology` VALUES (1,1,1,'Meh'),(2,2,1,'Emacs'),(3,3,1,'Explosion'),(
 UNLOCK TABLES;
 
 --
+-- Table structure for table `http_code`
+--
+
+DROP TABLE IF EXISTS `http_code`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `http_code` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `code` smallint NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_D6BFE61F77153098` (`code`)
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `http_code`
 --
 
@@ -34,6 +69,20 @@ LOCK TABLES `http_code` WRITE;
 INSERT INTO `http_code` VALUES (1,701),(2,702),(3,703),(4,704),(5,705),(6,706),(7,707),(8,710),(9,711),(10,712),(11,718),(12,719),(13,720),(14,721),(15,722),(16,723),(17,724),(18,725),(19,726),(20,727),(21,728),(22,730),(23,731),(24,732),(25,733),(26,734),(27,735),(28,736),(29,737),(30,738),(31,739),(32,750),(33,753),(34,754),(35,755),(36,756),(37,757),(38,759),(39,761),(40,762),(41,763),(42,764),(43,765),(44,766),(45,767),(46,768),(47,771),(48,772),(49,773),(50,774),(51,775),(52,776),(53,777),(54,778),(55,779),(56,780),(57,781),(58,782),(59,783),(60,784),(61,785),(62,786),(63,787),(64,788),(65,789),(66,791),(67,792),(68,793),(69,794),(70,795),(71,796),(72,797),(73,798),(74,799);
 /*!40000 ALTER TABLE `http_code` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `tag`
+--
+
+DROP TABLE IF EXISTS `tag`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tag` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `libelle` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `tag`
@@ -54,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-22 14:24:10
+-- Dump completed on 2024-05-27 21:18:40
