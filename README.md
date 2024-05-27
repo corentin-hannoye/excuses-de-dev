@@ -72,21 +72,20 @@
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  pnpm i npm@latest -g
+  npm install -g pnpm
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Cloner le repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/corentin-hannoye/excuses-de-dev
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
