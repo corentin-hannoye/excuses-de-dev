@@ -61,8 +61,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
@@ -125,19 +123,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Corentin HANNOYE - [@corentin_ha](https://x.com/corentin_ha) - corentin_hny@icloud.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/corentin-hannoye/excuses-de-dev](https://github.com/corentin-hannoye/excuses-de-dev)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
 [product-screenshot]: images/screenshot.png
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React.js]: https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
 [React-url]: https://reactjs.org
-[Symfony.com]: https://img.shields.io/badge/Symfony-20232A?style=for-the-badge&logo=symfony
+[Symfony.com]: https://img.shields.io/badge/Symfony-black?logo=symfony
 [Symfony-url]: https://symfony.com
-[Webpack.com]: https://img.shields.io/badge/Webpack-20232A?style=for-the-badge&logo=webpack
+[Webpack.com]: https://img.shields.io/badge/-Webpack-8DD6F9?style=flat&logo=webpack&logoColor=white
 [Webpack-url]: https://webpack.js.org
