@@ -4,13 +4,9 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
+<br /> 
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-      <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Les excuses de dev</h3>
+  <h2 align="center">Les excuses de dev</h2>
 
   <p align="center">
       Sujet Exam 2024 - entrée B1 - ForEach
@@ -18,9 +14,7 @@
       <a href="https://github.com/github_username/repo_name"><strong>Explorer les documents »</strong></a>
       <br />
       <br />
-      <a href="https://github.com/github_username/repo_name">View Demo</a>
-      ·
-      <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+      <a href="https://github.com/corentin-hannoye/excuses-de-dev/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
       ·
       <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
@@ -30,7 +24,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Table des matières</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -46,11 +40,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -131,11 +121,11 @@ Project Link: [https://github.com/corentin-hannoye/excuses-de-dev](https://githu
 
 
 [product-screenshot]: images/screenshot.png
-[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin
 [linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/
-[React.js]: https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
+[React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
 [React-url]: https://reactjs.org
-[Symfony.com]: https://img.shields.io/badge/Symfony-black?logo=symfony
+[Symfony.com]: https://img.shields.io/badge/Symfony-1F2937?style=for-the-badge&logo=symfony
 [Symfony-url]: https://symfony.com
-[Webpack.com]: https://img.shields.io/badge/-Webpack-8DD6F9?style=flat&logo=webpack&logoColor=white
+[Webpack.com]: https://img.shields.io/badge/Webpack-1F2937?style=for-the-badge&logo=webpack&logoColor=white
 [Webpack-url]: https://webpack.js.org
