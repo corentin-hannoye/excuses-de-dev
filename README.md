@@ -25,15 +25,15 @@
   <summary>Table des matières</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#à-propos-du-projet">À propos du projet</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#développé-avec">Développé avec</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#commencer">Commencer</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#prérequis">Prérequis</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -53,7 +53,7 @@
 
 
 
-### Construit avec
+### Développé avec
 
 * [![React][React.js]][React-url]
 * [![Symfony][Symfony.com]][Symfony-url]
@@ -67,15 +67,12 @@
 <!-- GETTING STARTED -->
 ## Commencer
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prérequis
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  npm install npm@latest -g
+  pnpm i npm@latest -g
   ```
 
 ### Installation
@@ -114,14 +111,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Corentin HANNOYE - [@corentin_ha](https://x.com/corentin_ha) - corentin_hny@icloud.com
 
-Project Link: [https://github.com/corentin-hannoye/excuses-de-dev](https://github.com/corentin-hannoye/excuses-de-dev)
+Lien du projet : [https://github.com/corentin-hannoye/excuses-de-dev](https://github.com/corentin-hannoye/excuses-de-dev)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
 [product-screenshot]: /ressources/media/screenshot-les-excuses-de-dev.png
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin
-[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/ "az"
+[linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/
 [React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
 [React-url]: https://reactjs.org
 [Symfony.com]: https://img.shields.io/badge/Symfony-1F2937?style=for-the-badge&logo=symfony
