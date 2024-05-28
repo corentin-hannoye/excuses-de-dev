@@ -126,7 +126,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 - [x] Création des différentes pages de l'application + style
 - [ ] Mise en place d'un lancement totalement automatisé avec Docker (échoué)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
 
