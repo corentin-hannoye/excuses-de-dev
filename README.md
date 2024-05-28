@@ -56,7 +56,8 @@
 
 ### Développé avec
 
-* [![React][React.js]][React-url]
+* [![ReactJs][React.js]][React-url]
+* [![TypeScript][Typescript.js]][Typescript-url]
 * [![Symfony][Symfony.com]][Symfony-url]
 * [![Pnpm][Pnpm.com]][Pnpm-url]
 * [![Webpack][Webpack.com]][Webpack-url]
@@ -74,7 +75,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
 
 * Docker : https://docs.docker.com/engine/install/
 * PNPM : https://pnpm.io/installation
-* Symfony CLI OU Composer : https://symfony.com/download | https://getcomposer.org/download/
+* Composer OU Symfony CLI  : https://getcomposer.org/download/ | https://symfony.com/download
 
 ### Installation
 
@@ -123,7 +124,7 @@ Les étapes suivantes permettent de lancer le projet avec Docker
   - [x] Création des différentes entités en s'appuyant sur le MCD créé auparavant
   - [x] Installation et configuration de la dépendance API Platform
 - [x] Création des différentes pages de l'application + style
-- [] Mise en place d'un lancement totalement automatisé avec Docker (échoué)
+- [ ] Mise en place d'un lancement totalement automatisé avec Docker (échoué)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,6 +161,8 @@ Lien du projet : [https://github.com/corentin-hannoye/excuses-de-dev](https://gi
 [linkedin-url]: https://www.linkedin.com/in/corentin-hannoye/ "LinkedIn"
 [React.js]: https://img.shields.io/badge/ReactJs-1F2937?style=for-the-badge&logo=react
 [React-url]: https://reactjs.org "ReactJs"
+[Typescript.js]: https://img.shields.io/badge/Typescript-1F2937?style=for-the-badge&logo=typescript
+[Typescript-url]: https://www.typescriptlang.org "TypeScript"
 [Symfony.com]: https://img.shields.io/badge/Symfony-1F2937?style=for-the-badge&logo=symfony
 [Symfony-url]: https://symfony.com "Symfony"
 [Pnpm.com]: https://img.shields.io/badge/PNPM-1F2937?style=for-the-badge&logo=pnpm
