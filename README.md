@@ -37,6 +37,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#feuille-de-route">Feuille de route</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -107,6 +108,24 @@ Les étapes suivantes permettent de lancer le projet avec Docker
    ```
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## Feuille de route
+
+- [x] Création des docs, du MCD et des composants de l'application
+- [x] Mise en place de l'environnement de développement (ReactJs, Webpack, Symfony)
+  - [x] Configuration de Webpack (TypeScript, React)
+- [x] Mise en place d'un router (react-router-dom)
+  - [x] Configuration des différentes routes demandées
+- [x] Configuration du ORM Doctrine + API
+  - [x] Création des différentes entités en s'appuyant sur le MCD créé auparavant
+  - [x] Installation et configuration de la dépendance API Platform
+- [x] Création des différentes pages de l'application + style
+- [] Mise en place d'un lancement totalement automatisé avec Docker (échoué)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
